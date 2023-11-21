@@ -13,7 +13,7 @@
     <div id="app">
         <button @click="generateEmail">genera email</button>
         <ul>
-            <li>{{ emailRandom }}</li>
+            <li v-for="email in emailRandom" >{{ email }}</li>
         </ul>
 
     </div>
